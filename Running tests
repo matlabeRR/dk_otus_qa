@@ -1,0 +1,23 @@
+Инструкция по запуску тестов:
+
+1. Скопировать репозиторий https://github.com/matlabeRR/dk_otus_qa.git (git clone)
+2. Перейти в директорию проекта "dk_otus_qa/"
+3. Запуск:
+a) All tests:
+> pytest
+b) Folder:
+> pytest [folder_name]  example: > pytest 0_data_type_test
+c) Module:
+> pytest [folder_name]/[module_name]    example: > pytest 0_data_type_test/1_list_test.py
+d) Class:
+> pytest [folder_name]/[module_name]::[ClassName]    example: > pytest 0_data_type_test/1_list_test.py::TestList
+e) Test of Class:
+> pytest [folder_name]/[module_name]::[ClassName]::[test_name]      example: > pytest 0_data_type_test/1_list_test.py::TestList::test_three
+f) Test not in Class:
+> pytest [folder_name]/[module_name]::[test_name]       example: > pytest 0_data_type_test/1_list_test.py::test_one
+4) Дополнительные опции вывода:
+-q - упрощённый вывод
+-s - отображение ходы выполнения
+-v - более подробный режим вывода
+
+*для более подробного ознакомления с параметрами запуска используйте команду > pytest -h
